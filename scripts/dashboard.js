@@ -3,8 +3,8 @@ volverbtn = document.getElementById("volverboton");
 
 volverbtn.onclick = (e) => {
   
-localstorage.logged = false;
-}
+localStorage.logged = false;
 if (localStorage.logged == "false") {
     location = "./login.html"
+}
 }
