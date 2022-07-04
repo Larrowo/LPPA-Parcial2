@@ -25,15 +25,34 @@ function logInRequest() {
     }),
   })
     .then((response) => response.json())
-    .then((info) => logIn(info))
+    .then((data) => logIn(data))
     .catch((error) => console.log(error));
 }
 
-function logIn(info) {
-  if (!info.error) {
+function logIn(data) {
+  if (!data.error) {
     localStorage.logged = "true";
     location = "./dashboard.html";
   }
 }
 
 
+
+
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = message;
+  inputControl.classList.add('error');
+  inputControl.classList.remove('success')
+}
+
+const setSuccess = element => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = '';
+  inputControl.classList.add('success');
+  inputControl.classList.remove('error');
+};

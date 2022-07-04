@@ -45,15 +45,6 @@ form {
     box-sizing:border-box;
   }
   
-  .inputContainer select {
-    font-size: 18px;
-    color: #000;
-    padding: 15px 10px;
-    border: none;
-    outline: none;
-    background-color: #ececee;
-    width: 100%;
-  }
   
   /* submit button */
   
@@ -78,3 +69,19 @@ form {
     -o-transition: font-size .5s ease;
     transition: font-size .5s ease;
     }
+
+
+    
+.inputContainer.success {
+  border-color: #09c372;
+}
+
+.inputContainer.error {
+  border-color: #ff3860;
+}
+
+.inputContainer .error {
+  color: #ff3860;
+  font-size: 14px;
+  height: 13px;
+}
