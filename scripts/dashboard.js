@@ -5,7 +5,7 @@ populateRequest();
 
 function validateSession() {
   if (localStorage.logged == "false") {
-    location = "./login.html";
+    location = "./index.html";
   }
 }
 
