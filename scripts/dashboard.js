@@ -1,4 +1,4 @@
-volverbtn = document.getElementById("volverboton");
+logoutButton = document.getElementById("logoutButton");
 
 validateSession();
 populateRequest();
@@ -31,7 +31,7 @@ function populateTable(users) {
     tableBody.innerHTML = output;
 }
 
-volverbtn.onclick = (e) => {
+logoutButton.onclick = (e) => {
   localStorage.logged = false;
   validateSession();
 };
