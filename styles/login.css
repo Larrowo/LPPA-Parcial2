@@ -1,87 +1,94 @@
 /* Formulario de subscripción */
 
 form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    border:3px solid rgb(218, 238, 218);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px;
-    margin: 30px;
-  }
-  
-  p {
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    Color:white;
-  }
-  
-  .logInForm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  .inputContainer {
-    padding: 10px;
-    border: 3px solid #ffffff;
-    border-radius: 5px;
-    background-color: #ececee;
-    margin: 10px;
-  }
-  
-  .inputContainer input {
-    font-size: 18px;
-    color: #000;
-    padding: 15px 10px;
-    border: none;
-    outline: none;
-    background-color: #ececee;
-    text-indent: 10px;
-    width: 100%;
-    box-sizing:border-box;
-  }
-  
-  
-  /* submit button */
-  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border: 3px solid rgb(218, 238, 218);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  margin: 30px;
+}
 
-  #logInButton {
-    color: #fff;
-    height: 60px;
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background: #5959d4;
-    margin-top: 20px;
-    margin: 10px;
-  
-  }
-  
-  #logInButton:hover{
-    cursor:pointer;
-    font-size: 23px;
-    -webkit-transition: font-size .5s ease;
-    -moz-transition: font-size .5s ease;
-    -o-transition: font-size .5s ease;
-    transition: font-size .5s ease;
-    }
+p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  color: white;
+}
 
+.logInForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    
+.inputContainer {
+  padding: 10px;
+  border: 4px solid #ffffff;
+  border-radius: 5px;
+  background-color: #ececee;
+  margin: 10px;
+}
+
+.inputContainer input {
+  font-size: 18px;
+  color: #000;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  background-color: #ececee;
+  text-indent: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* submit button */
+
+#logInButton {
+  color: #fff;
+  height: 60px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #5959d4;
+  margin-top: 20px;
+  margin: 10px;
+}
+
+#logInButton:hover {
+  cursor: pointer;
+  font-size: 23px;
+  -webkit-transition: font-size 0.5s ease;
+  -moz-transition: font-size 0.5s ease;
+  -o-transition: font-size 0.5s ease;
+  transition: font-size 0.5s ease;
+}
+
+/* error color handling */
+
+.error.hidden {
+  display: none;
+}
+
 .inputContainer.success {
   border-color: #09c372;
+}
+
+.inputContainer.success .error{
+  display: none
 }
 
 .inputContainer.error {
   border-color: #ff3860;
 }
 
-.inputContainer .error {
+.inputContainer .error.active {
+  display:block;
   color: #ff3860;
   font-size: 14px;
   height: 13px;
 }
+
+
